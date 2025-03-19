@@ -1,0 +1,160 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* -------------------------------------- index page ----------------------------------------- */
+.index-page{
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid pink;
+   
+}
+
+.index-page img{
+    width:150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.index-page a{
+    background-color: red;
+    text-decoration: none;
+    font-size: 7.5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    color:white;
+    padding: 5px 15px;
+    animation-name: moveUpDown;
+   animation-duration: 1s;
+   animation-timing-function: ease-in;
+   animation-iteration-count:infinite;
+}
+
+.index-page a:hover{
+    animation: none;
+    transform:scale(1.1);
+    background-color: rgb(255, 15, 15);
+}
+
+/* ---------------------------------------------- rules page -------------------------------------------------- */
+
+.rules{
+width:100%;
+height:100vh;
+background-color: rgba(107, 106, 106, 0.4);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.rules img{
+    width:350px;
+    height:350px;
+    border-radius: 10px;
+    margin:10px;
+    background-color: white;
+    box-shadow: 2px 2px 4px grey;
+    animation-name: moveUpDown;
+    animation-duration: 1s;
+   animation-timing-function: ease-in;
+   animation-iteration-count:infinite;
+}
+
+.rules a{
+    background-color: rgb(0, 60, 255);
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    color:white;
+    padding: 8px 20px;
+    margin:10px;
+}
+.rules a:hover{
+    transform:scale(1.1);
+    background-color: rgb(15, 147, 255);
+}
+
+@keyframes moveUpDown{
+    0%, 100% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------------------------- main page -------------------------------------------------------- */
+
+.l-container{
+    width:60%;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px grey;
+    background-color: aliceblue;
+    position: relative;
+    
+}
+
+.heading{
+    padding:20px;
+
+}
+.heading span:first-child{
+    color:darkcyan  
+}
+.heading span:nth-child(2){
+    color:coral;
+}
+.heading span:last-child{
+    color:deeppink;
+}
+
+.game-screen{
+    width:90%;
+    height:40%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-section{
+    margin:20px;
+    position: absolute;
+    bottom:10px;
+    
+}
+
+.select-section button{
+    margin:10px;
+}
+
+.select-section img{
+    width:80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.select-section img:hover{
+transform: scale(1.1);
+border:2px solid red;
+}

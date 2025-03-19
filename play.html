@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="l-container">
+        <div>
+        <h1 class="heading"><span>Rock</span> -  <span>Paper</span> - <span>Scissors</span></h1>
+        </div>
+
+        <div class="game-screen">
+            <h2 id="playerDisplay">PLAYER: </h2>
+            <img id="playerImage" src="./assets/rock.jpeg"/>
+            <span>Vs</span>
+            <h2 id="computerDisplay">COMPUTER: </h2>
+            <img id="computerImage" src="./assets/rock.jpeg"/>
+        </div> 
+            <h2 id="resultDisplay"></h2>  
+
+        <div class="select-section">
+            <button id="rock-btn" onClick="playGame('rock')"><img src="./assets/rock.jpeg"/></button>
+            <button id="pap-btn" onClick="playGame('paper')"><img src="./assets/paper.jpeg"/></button>
+            <button id="sis-btn" onClick="playGame('scissors')"><img src="./assets/scissors.jpeg"/></button>
+        </div>
+    </div>
+
+    <script src='./script.js'></script>
+</body>
+</html>
